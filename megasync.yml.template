@@ -1,0 +1,13 @@
+app: megasync
+binpatch: true
+
+ingredients:
+  dist: DIST
+  packages:
+    libraw20
+  sources: 
+    - deb http://archive.ubuntu.com/ubuntu/ DIST main universe
+  debs:
+    - ../megasync-client-latest.deb
+script:
+  - cp ./usr/share/icons/hicolor/256x256/apps/mega.png .
